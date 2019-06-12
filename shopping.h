@@ -16,8 +16,8 @@
 class Shopping{
  public:
   void PushList(Goods object);
-  Goods GetLastElement();
-  void PrintList();
+  const Goods& GetLastElement() const;
+  void PrintList() const;
   void SortByPrice();
   void SortByIndex();
 

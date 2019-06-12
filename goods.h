@@ -8,13 +8,13 @@
 //    std::cout << test.GetIndex() << " - " << test.GetPrice << endl;
 class Goods{
  public:
-  void SetGoodsInfo(int index, int price);
-  int GetIndex();
-  int GetPrice();
+  Goods(int index, int price) : index_(index), price_(price) {}
+  int GetIndex() const;
+  int GetPrice() const;
 
  private:
-  int goods_index_ = 0;
-  int goods_price_ = 0;
+  int index_ = 0;
+  int price_ = 0;
 };
 
 
